@@ -8,9 +8,11 @@
     <style>
       .grid-container {
         display: grid;
-        grid-template-rows: 30px 50px;
-        grid-template-columns: 30px 50px;
+        grid-template-rows: 100px 150px;
+        grid-template-columns: 150px 100px;
         grid-gap: 5px;
+        grid-auto-columns: 130px;
+        grid-auto-flow: column;
       }
 
       .grid-item {
@@ -20,6 +22,10 @@
   </head>
   <body>
     <div class="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
       <div class="grid-item"></div>
       <div class="grid-item"></div>
       <div class="grid-item"></div>
