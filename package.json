@@ -14,5 +14,15 @@
   "homepage": "https://github.com/DasolPark/Nico_CSS_CSS-Master-Class#readme",
   "scripts": {
     "start": "parcel index.html"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^6.7.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      }
+    }
   }
 }
