@@ -9,10 +9,8 @@
       .grid-container {
         display: grid;
         grid-auto-rows: 200px;
-        grid-template-columns: [line-start] 1fr [line-sexy] 1fr [line-david] 1fr [line-end] 1fr;
-        /* grid-template-columns: [line-start] repeat(5, 1fr) [line-end]; */
+        grid-template-columns: repeat(5, 1fr);
         grid-gap: 0.5rem;
-        grid-auto-flow: row dense;
       }
 
       .grid-item:nth-child(even) {
@@ -22,8 +20,9 @@
         background-color: #9b59b6;
       }
       .grid-item:first-child {
-        grid-column-start: line-sexy;
-        grid-column-end: line-david;
+        /* grid-row: 1/4; */
+        grid-row: span 3;
+        grid-column: span 3;
       }
       .grid-item {
         display: flex;
