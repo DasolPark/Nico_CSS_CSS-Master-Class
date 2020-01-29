@@ -18,8 +18,8 @@ CSS Master Class Course (Flexbox, Grid, PostCSS, CSSNext)
 - [x] fr unit, repeat
 - [x] minmax, max-content, min-content
 - [x] auto-fill, auto-fit
-- [ ] Justify Content, Align Content and Place Content
-- [ ] Justify Items, Align Items and Place Items
+- [x] Justify Content, Align Content and Place Content
+- [x] Justify Items, Align Items and Place Items
 - [ ] Grid Column, Column Start and End
 - [ ] Line Naming
 - [ ] Grid Row, Row Start and End
