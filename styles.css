@@ -1,7 +1,35 @@
-/* li:matches(:nth-child(even), .target) {
+li:matches(:nth-child(even), .target) {
   background-color: antiquewhite;
-} */
+}
 
 li:not(.target) {
-  background-color: aquamarine;
+  color: aquamarine;
+}
+
+:root {
+  --favoriteColor: #f1c40f;
+  --favoriteBorder: 0.5rem solid #2c3e50;
+}
+
+body {
+  background-color: var(--favoriteColor);
+}
+
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+@custom-selector :--UlAndLis ul, li;
+
+:--headers {
+  color: #d35400;
+  border-bottom: var(--favoriteBorder);
+}
+
+li:hover {
+  border-bottom: var(--favoriteBorder);
+}
+
+:--UlAndLis {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  border: var(--favoriteBorder);
 }
