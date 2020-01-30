@@ -10,3 +10,19 @@
     background-color: #2c3e50;
   }
 }
+
+h1 {
+  color: #8e44ad;
+}
+
+h1:hover {
+  color: color-mod(#8e44ad whiteness(50%));
+}
+
+h2 {
+  color: gray(50);
+}
+
+h3 {
+  font-family: system-ui;
+}
