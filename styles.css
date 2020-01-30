@@ -1,28 +1,24 @@
-/* 1. General */
-/* @custom-media --ipad-size (max-width: 500px); */
-/* 2. Range */
-/* @custom-media --ipad-size (width <= 550px); */
-/* 3. Catch */
-@custom-media --ipad-size (350px < width <= 850px);
-
-@media (--ipad-size) {
-  body {
-    background-color: #2c3e50;
+main {
+  background-color: #e67e22;
+  width: 100%;
+  & section {
+    background-color: #f1c40f;
+    width: 80%;
+    & li {
+      background-color: #2ecc71;
+      width: 50%;
+      & a {
+        background-color: #1abc9c;
+        color: #8e44ad;
+        width: 100%;
+        &:hover {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }
 
-h1 {
-  color: #8e44ad;
-}
-
-h1:hover {
-  color: color-mod(#8e44ad whiteness(50%));
-}
-
-h2 {
-  color: gray(50);
-}
-
-h3 {
-  font-family: system-ui;
+a {
+  color: red;
 }
